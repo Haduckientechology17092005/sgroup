@@ -55,9 +55,12 @@ btn.addEventListener('click', function(event){
     if(passwordValue.includes(' ')){
         pas = false;
     }
-    if (pas === false || acc === false)
+    if (pas === false)
     {
         alert("Làm ơn nhập lại giúp tôi có đủ chữ hoa, chữ thường, kí tự đặc biệt, chữ số và đừng có dấu cách nhé :))))");
+    }
+    else if (acc === false){
+        alert("User name Chỉ bao gồm các kí tự chữ cái và số thôi nhé")
     }
     else
     {
